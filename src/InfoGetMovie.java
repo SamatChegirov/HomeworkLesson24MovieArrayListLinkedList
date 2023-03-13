@@ -1,9 +1,7 @@
-import java.util.Collections;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 
-public class InfoGetMovie implements Findable, Sortable {
+public class InfoGetMovie implements Findable {
 
     @Override
     public List<Movie> getAllMovies(List<Movie> movies) {
@@ -91,7 +89,7 @@ public class InfoGetMovie implements Findable, Sortable {
         }
     }
 
-    @Override
+   /* @Override
     public void sortByMovieName(List<Movie> movies) {
         List<String> sortMovieNameAZ = new LinkedList<>();
         sortMovieNameAZ.add("Avatar");
@@ -128,5 +126,5 @@ public class InfoGetMovie implements Findable, Sortable {
         Collections.reverse(sortMovieDirectors);
         System.out.println(sortMovieDirectors);
 
-    }
+    }*/
 }

@@ -11,6 +11,7 @@ public class Main {
         Movie legends = new Movie("Legends of the Fall", 1994, "Historical drama", new Director("Edward", "Zwick"), new LinkedList<Cast>(Arrays.asList(Brad, Julia)));
 
         InfoGetMovie infoGetMovie = new InfoGetMovie();
+        SortInfoMovie sortInfoMovie = new SortInfoMovie();
 
         while (true) {
             System.out.println("**********");
@@ -39,13 +40,13 @@ public class Main {
                     infoGetMovie.findMovieByRole(new ArrayList<>(Arrays.asList(avatar, legends)));
                     break;
                 case 8:
-                    infoGetMovie.sortByMovieName(new ArrayList<>(Arrays.asList(avatar, legends)));
+                    sortInfoMovie.sortByMovieName(new ArrayList<>(Arrays.asList(avatar, legends)));
                     break;
                 case 9:
-                    infoGetMovie.sortByYear(new ArrayList<>(Arrays.asList(avatar, legends)));
+                    sortInfoMovie.sortByYear(new ArrayList<>(Arrays.asList(avatar, legends)));
                     break;
                 case 10:
-                    infoGetMovie.sortByDirector(new ArrayList<>(Arrays.asList(avatar, legends)));
+                    sortInfoMovie.sortByDirector(new ArrayList<>(Arrays.asList(avatar, legends)));
                     break;
             }
         }
